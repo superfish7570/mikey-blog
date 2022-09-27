@@ -1,0 +1,15 @@
+.wrapper {
+  margin-top: 15px;
+  border-top:1px solid #ccc;
+  .row{
+    display: flex;
+    margin-top: 14px;
+    .label{
+      width: 70px;
+      line-height: 32px;
+    }
+    .content{
+      flex: 1;
+    }
+  }
+}

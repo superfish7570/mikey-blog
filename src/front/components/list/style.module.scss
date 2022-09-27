@@ -1,0 +1,50 @@
+
+.list {
+  margin: 0 0 10px 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+  .item {
+    width: 20%;
+    margin-top: 10px;
+    .link{
+      color: #333;
+      text-decoration: none;
+    }
+
+    .img {
+      display: block;
+      width: 240px;
+      height: 140px;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
+    .title {
+      overflow: hidden;
+      margin: 0;
+      line-height: 32px;
+      padding: 0 10px;
+      font-size: 16px;
+      font-weight: normal;
+      white-space: normal;
+      text-overflow: ellipsis;
+    }
+
+    .desc {
+      overflow: hidden;
+      margin: 0;
+      line-height: 24px;
+      padding: 0 10px;
+      color: #777;
+      font-size: 14px;
+      font-weight: normal;
+      text-overflow: ellipsis;
+      display: -webkit-box; //作为弹性伸缩盒子模型显示
+      -webkit-box-orient: vertical; // 设置伸缩盒子的子元素排列方式一一从上到下垂直排列
+      -webkit-line-clamp: 4; //显示的行
+    }
+  }
+}
